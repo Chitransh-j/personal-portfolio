@@ -4,8 +4,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Portfolio</title>
-    <meta name="description" content="Portfolio" />
-    <meta name="author" content="schmelto" />
     <link rel="shortcut icon" type="image/jpg" href="assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -19,16 +17,6 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
-    <meta property="og:title" content="schmelto" />
-    <meta
-      property="og:site_name"
-      content="https://schmelto.github.io/Portfolio/"
-    />
-    <meta property="og:url" content="https://schmelto.github.io/Portfolio/" />
-    <meta property="og:description" content="Portfolio website of schmelto" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://www.github.com/schmelto.png" />
 
     <meta
       name="theme-color"
@@ -65,28 +53,35 @@
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <a class="nav-link" href="#">home</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li
               class="nav-item"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <a class="nav-link" href="#about">about</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li
               class="nav-item"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <a class="nav-link" href="#projects">profiles</a>
+              <a class="nav-link" href="#profiles">Profiles</a>
             </li>
             <li
               class="nav-item"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
             >
-              <a class="nav-link" href="#background">background</a>
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li
+              class="nav-item"
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+            >
+              <a class="nav-link" href="#background">Background</a>
             </li>
           </ul>
         </div>
@@ -100,16 +95,16 @@
 
       <div class="row">
         <div class="col-md-auto">
-          <h1>I am</h1>
+          <h1>I am </h1>
         </div>
         <div class="col-md-auto">
           <div class="carousel">
             <div class="change_outer">
               <div class="change_inner">
                 <h1 class="element" style="color: #ef5350">Chitransh.</h1>
-                <h1 class="element">Developer.</h1>
-                <h1 class="element">Coder.</h1>
-                <h1 class="element">Techy.</h1>
+                <h1 class="element">a Developer.</h1>
+                <h1 class="element">a Coder.</h1>
+                <h1 class="element">a Techy.</h1>
               </div>
             </div>
           </div>
@@ -119,7 +114,7 @@
       <div class="box">
         <pre id="typewriter" class="text">
 <span class="highlight-red">const</span> name = <span class="highlight-blue">'Chitransh'</span>;
-<span class="highlight-orange">Developer</span> dev = <span class="highlight-red">new</span> <span class="highlight-orange">Developer</span>(name);
+<span class="highlight-orange">const</span> dev = <span class="highlight-red">new</span> <span class="highlight-orange">Developer</span>(name);
 
 <span class="highlight-red">while</span>(dev.<span class="highlight-pink">isCoding</span>()){
 	dev.<span class="highlight-pink">listenToMusic</span>();
@@ -137,9 +132,9 @@
         <div class="col-md">
           <img
             style="height: 20rem"
-            src="./assets/tom.png"
+            src="./assets/chitransh.png"
             class="img mx-auto d-block"
-            alt="schmelto"
+            alt="chitransh"
           />
         </div>
 
@@ -158,46 +153,63 @@
         </div>
       </div>
 
-      <div id="projects" class="row padding-top">
-        <h2>Profiles</h2>
+      <div id="profiles" class="row padding-top">
+        <h2 styles="padding-bottom : 20rem">Profiles</h2>
         <div styles = "padding-left : -200rem" class="col-md d-flex justify-content-center padding-on-md ">
           <pre class="text">
-          <span class="highlight-red">var</span> CodingProfiles = {
-            <span class="highlight-blue">LeetCode</span>: <a href="https://leetcode.com/chitransh_jawere_34/">'chitransh_jawere_34'</a>,
-            <span class="highlight-blue">GeeksForGeeks</span>:  <a href="https://auth.geeksforgeeks.org/user/chitranshjawere/practice">'chitranshjawere'</a>
-            <span class="highlight-blue">Codechef</span>:  <a href="https://www.codechef.com/users/chitransh3">chitransh3</a>
-              }
+          <span class="highlight-red">function</span> CodingProfiles(name) = {
+            <span class="highlight-blue">this.name = </span><a href="https://github.com/Chitransh-j">name</a> ;
+            <span class="highlight-blue">this.leetCode = </span><a href="https://leetcode.com/chitransh_jawere_34/">'chitransh_jawere_34'</a> ;
+            <span class="highlight-blue">this.geeksForgeeks = </span><a href="https://auth.geeksforgeeks.org/user/chitranshjawere/practice">'chitranshjawere'</a> ;
+            <span class="highlight-blue">this.codechef = </span>  <a href="https://www.codechef.com/users/chitransh3">'chitransh3'</a>
+          }
             
-          <span class="highlight-orange">CodingProfile</span> User = <span class="highlight-red">new</span> <span class="highlight-orange">CodingProfile</span>("Chitransh");
+          <span class="highlight-orange">let </span>user = <span class="highlight-red">new</span> <span class="highlight-orange">CodingProfile</span>("Chitransh");
+          </pre>
+        </div>
+      </div>
+
+      <div id="projects" class="row padding-top">
+        <h2>Projects : </h2>
+        <div styles = "padding-left : -200rem" class="col-md d-flex justify-content-center padding-on-md ">
+          <pre class="text">
+          <span class="highlight-red">function</span> Projects(name) = {
+            <span class="highlight-blue">this.portfolio = </span> 'Using Bootstrap' ;
+            <span class="highlight-blue">this.football = </span><a href="https://manchester-city-react.netlify.app/">'Using ReactJs'</a> ;
+            <span class="highlight-blue">this.todoList = </span><a href="https://to-do-list-chitranshjawere.netlify.app/">'Using ReactJs'</a> ;
+            <span class="highlight-blue">this.cryptotracker = </span><a href="https://cryptotracker-online-react.netlify.app/">'Using ReactJS, Axios'</a> ;
+            <span class="highlight-blue">this.simongame = </span>  <a href="https://chitransh-j.github.io/SimonGame/">'Using HTML,CSS & JS'</a>;
+            <span class="highlight-blue">this.footblog = </span>  <a href="https://chitransh-j.github.io/FootBlog/">'Using HTML,CSS & JS'</a>;
+            <span class="highlight-blue">this.drumkit = </span>  <a href="https://chitransh-j.github.io/DrumKit/">'Using HTML,CSS & JS'</a>
+          }
+          
           </pre>
         </div>
       </div>
 
 
-      <div id="background" class="row padding-top">
-        <h2 style="padding-bottom: 5rem">Background</h2>
+      <div id="background" class="row padding-top" style="padding-top: 0rem">
+        <h2 >Background</h2>
       </div>
 
       <div class="row">
 
-        <h3 style="padding-bottom: 3rem">Education</h3>
-
         <ul class="timeline">
-          <li class="event" data-date="2021 -Present">
-            <h3>Bachelors of Technology, Information Technology</h3>
+          <li class="event highlight-blue" data-date="2021 -Present">
+            <h3 class="highlight-red">Bachelors of Technology, Information Technology</h3>
             <p class="text-muted">
               <b>National Institute of Technology, Raipur</b>
             </p>
             <p class="text-muted"> CPI : 8.69 (Till 4th Sem)</p>
 
           </li>
-          <li class="event" data-date="2009 - 2017">
-            <h3>Senior Secondary</h3>
+          <li class="event highlight-blue" data-date="2009 - 2017">
+            <h3 class="highlight-red">Senior Secondary</h3>
             <p class="text-muted"><b>Indore Public School</b></p>
             <p class="text-muted"> Class 12th : 95.6 %</p>
           </li>
-          <li class="event" data-date="2009 - 2017">
-            <h3>Higher Secondary</h3>
+          <li class="event highlight-blue" data-date="2009 - 2017">
+            <h3 class="highlight-red">Higher Secondary</h3>
             <p class="text-muted"><b>Indore Public School</b></p>
             <p class="text-muted"> Class 10th : 93.6 %</p>
           </li>
@@ -206,7 +218,7 @@
 
      
 
-      <h3 style="padding-top:5rem">Tech-Stack</h3>
+      <h2 style="padding-top:5rem ;padding-bottom:2.5rem">Tech-Stack</h3>
 
       <div class="flex-col-2">
         <div class="flex-card">
@@ -217,7 +229,6 @@
 	<span class="highlight-blue">'JavaScript'</span>,
 	<span class="highlight-blue">'ReactJS'</span>,
 	<span class="highlight-blue">'Bootstrap'</span>,
-	<span class="highlight-blue">'Python'</span>,
 	<span class="highlight-blue">'C++'</span>]
 </pre>
         </div>
@@ -232,7 +243,7 @@
 </pre>
           <div class="flex-card">
             <pre class="text">
-<span class="highlight-red">let</span> other = [<span class="highlight-blue">'netlify'</span>]
+<span class="highlight-red">let</span> other = [<span class="highlight-blue">'github'</span>]
 </pre>
           </div>
         </div>
