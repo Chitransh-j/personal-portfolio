@@ -59,9 +59,9 @@ function setupTypewriter(t) {
   };
 }
 const typer = document.getElementById('typewriter');
-// eslint-disable-next-line no-undef
+
 typewriter = setupTypewriter(typewriter);
-// eslint-disable-next-line no-undef
+
 typewriter.type();
 
 const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
